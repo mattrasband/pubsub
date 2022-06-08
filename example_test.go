@@ -13,7 +13,7 @@ func Example() {
 	ch := ps.Sub(topic)
 	go publish(ps)
 
-	for i := 1; ; i++ {
+	for i := 1; i < 7; i++ {
 		if i == 5 {
 			// See the documentation of Unsub for why it is called in a new
 			// goroutine.
